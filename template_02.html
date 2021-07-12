@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin:0px;
+  padding: 0px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  width:100%;
+}
+
+header h1 {
+  font-size: 50px;  
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+header p {
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+/* Style the top navigation bar */
+nav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  display:block;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+nav #myLinks {
+  display: none;
+}
+
+/* Style the topnav links */
+nav a {
+  
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Style the hamburger menu */
+nav a.icon {
+  background-color: #333;
+  color: #ffffff;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+/* Clear floats after the columns */
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+/*@media screen and (max-width: 600px) {
+/*  nav a {
+/*    float: none;
+/*    width: 100%;}
+} */
+</style>
+</head>
+<body>
+
+	<header>
+	  <h1>My Website</h1>
+	  <p>um subtitulo bacana</p>
+	</header>
+
+	<nav>
+		<a href="#" class="active">LOGO</a>
+		<!-- Navigation links (hidden by default) -->
+		<div id="myLinks">
+		  <a href="#">Sobre</a>
+		  <a href="#">Produtos</a>
+		  <a href="#">Contacto</a>
+		</div>  
+	  
+	  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+	  
+	</nav>
+
+	<main>
+		
+			<div class="card">
+			  <h2>SOBRE</h2>
+			  <h5>Title description, Dec 7, 2017</h5>
+			  <div class="fakeimg" style="height:200px;">Image</div>
+			  <p>Some text..</p>
+			  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			</div>
+			<div class="card">
+			  <h2>PRODUTOS</h2>
+			  <h5>Title description, Sep 2, 2017</h5>
+			  <div class="fakeimg" style="height:200px;">Image</div>
+			  <p>Some text..</p>
+			  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			</div>
+		
+  
+	</main>
+
+	<footer>
+	  <h2>Footer</h2>
+	</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+	
+</body>
+</html>
