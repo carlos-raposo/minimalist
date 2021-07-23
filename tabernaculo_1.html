@@ -7,8 +7,9 @@
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
 <style>
 * {
   box-sizing: border-box;
@@ -16,7 +17,7 @@
 
 
 body {
-  font-family: Arial;
+  font-family: 'Montserrat', sans-serif;
   margin:0px;
   padding: 0px;
   background:black ;
@@ -48,7 +49,15 @@ header p {
 }
 
 header a.phone {position: absolute; left: 6px; top: 6px; color:#ffee19;}
+/* mouse over link */
+header a:hover {
+  color: red;
+}
 
+/* selected link */
+header a:active {
+  color: green;
+}
 
 /* Style the top navigation bar */
 nav {
@@ -114,7 +123,8 @@ img {width:100%}
   padding: px;
   margin-top: 0px;
 }
-.card h2{text-align:center;
+.card h2{font-family:'Montserrat', sans-serif;
+	text-align:center;
 	font-size: 6vw;
 	padding-bottom: 3vw;
     padding-top: 3vw;}
@@ -199,7 +209,7 @@ nav a.icon {right:6vw;
 body {padding:0 20vw 0 20vw}
 header h1 {
     font-size: 70px;
-    margin-top: 10px;
+    margin-top: 70px;
     margin-bottom: 10px;
 }
 header p {
@@ -232,10 +242,10 @@ footer{
 footer h3 {
     font-size: 30px;
 }
-.card h2 {font-size: 2vw;
+.card h2 {font-size: 2.5vw;
 		padding-bottom: 3vw;
 		padding-top: 3vw;}
-.card p {font-size: 24px;
+.card p {font-size: 36px;
 		padding:0 20px 20px 20px;
 }
 
@@ -271,26 +281,32 @@ footer h3 {
 		
 			<div id="sobre" class="card">
 			  <div class="fakeimg"><img src="porta.png"></div>
-			  <h2 id="produtos" style="font-family: 'Prociono', serif;">SOBRE</h2>
-			  <p>Entre o Cais do Sodré e Bairro da Bica, no centro de Lisboa, um bar de vinhos com uma adega do século 15.
-			  Aqui pode apreciar um bom vinho, saborear a gastronomia africana, curtir música popular brasileira ou um som jazz de New Orleans.
+			  <p style="text-align:center">Rua de S. Paulo 218, 1200-109 Lisboa</p>
+			  <h2 id="produtos">SOBRE</h2>
+			  <p>Entre o Cais do Sodré e o Bairro da Bica, no centro de Lisboa, um bar de vinhos onde também pode optar por um cocktail.<br>
+			  A cozinha é de raiz africana e pode escolher entre petiscar ou jantar. <br>
+			  Os sons que vai poder ouvir aqui, vão da Música Popular Brasileira ao Jazz de New Orleans, do Funk à Bossa Nova.
+			  Cruzam-se os sons de Nina Simone, Gilberto Gil, Nat King Cole, Bethania, Bob Marley, Elza Soares, Marvin Gaye, e Stevie Wonder.<br>
 			  É também o bar de Hernâni Miguel, nome lendário da noite lisboeta.<br> 
-			    			    
+			     			    
 			  </p>
 			</div>
 			<div class="card">
-			  <h2 style="font-family: 'Prociono', serif;">PRODUTOS</h2>
+			  <h2>MENU</h2>
 			  <div class="fakeimg"><img src="wineandcheese.png" style="padding: 50px;"></div>
 			  
-			  <p>Cruzam-se os sons de Nina Simone, Gilberto Gil, Nat King Cole, Bethania, Bob Marley, Elza Soares, Marvin Gaye, e Stevie Wonder.</p>
+			  <p> Vinhos: #### #### ### #### ## #### #### ### ### #### #### ### #### ## #</p>
+			  <p> Queijos: #### #### ## ## #### ### #### ## #### #### ### ### #### #### ### ##### ### ###</p>
+			  <p> Petiscos: #### ### ### # ## #### ### #### ## #### #### ### ### #### #### ### #### ### ###</p>
+			  <p> Pratos: #### #### ### ## # ## #### ### #### ## #### #### ### ### #### #### ### ######</p>
 			</div>
 		
   
 	</main>
 
-	<footer id="contacto">	  
+	<footer id="contacto">	
 	  <a href="https://www.facebook.com/tabernaculobyhernani/"><h3>FACEBOOK</h3></a>
-	  <a href="#"><h3>INSTAGRAM</h3></a>
+	  <a href="https://www.instagram.com/tabernaculo_by_hernani_miguel/"><h3>INSTAGRAM</h3></a>
 	</footer>
 	<div style="background-color: #ffff005e;border-top: ;">
 		<p style="margin: 0 auto; text-align:center ;padding-top: 4px; padding-bottom: 4px;">design: CMR 2021</p>
